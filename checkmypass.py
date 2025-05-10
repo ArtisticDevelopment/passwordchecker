@@ -31,9 +31,9 @@ def main(args):
       print(f'{password} was found {count} times. Youuuu should change that...haha')
     else:
       print(f'{password} was NOT found, so ... carry on!')
-  return 'done!'
+  return 'Goodbye!'
 
 #sys.argv is a list of command-line arguments passed to the script.
 #sys.argv[0] is always the script name (e.g., checkmypass.py)
 #sys.argv[1:] grabs everything after that, which would be the actual passwords you want to check.
-main(sys.argv[1:])
+sys.exit(main(sys.argv[1:]))
